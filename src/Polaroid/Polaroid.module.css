@@ -1,0 +1,41 @@
+.container {
+  position: relative;
+  width: 80%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.polaroidFrame {
+  position: relative;
+  top: 0;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pin {
+  position: absolute;
+  top: -12%;
+  width: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.photo {
+  position: absolute;
+  top: 10%;
+  width: 88%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.text {
+  font-family: "Permanent Marker";
+  font-size: 12px;
+  position: absolute;
+  bottom: 12%;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}

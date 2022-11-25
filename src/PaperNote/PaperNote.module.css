@@ -1,0 +1,27 @@
+.container {
+  position: relative;
+  width: 80%;
+  color: black;
+  text-align: center;
+  font-family: "Sue Ellen Francisco";
+}
+
+.backgroundImg {
+  width: 100%;
+}
+
+.textBox {
+  font-size: 14px;
+  position: absolute;
+  width: 70%;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pin {
+  position: absolute;
+  width: 15%;
+  top: 5%;
+  left: 50%;
+}

@@ -1,13 +1,33 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@font-face {
+  font-family: "Permanent Marker";
+  src: url("./assets/fonts/Permanent_Marker/PermanentMarker-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Sue Ellen Francisco";
+  src: url("./assets/fonts/Sue_Ellen_Francisco/SueEllenFrancisco-Regular.ttf");
+}
+
+.hoverContainer {
+  transition: all 0.5s;
+  transform: scale(1);
+}
+
+.hoverContainer:hover {
+  z-index: 2;
+  transform: scale(1.2);
 }

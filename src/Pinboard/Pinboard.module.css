@@ -1,0 +1,35 @@
+.background {
+  background-image: url("../assets/images/boardBG.png");
+  background-repeat: repeat;
+  min-height: 100vh;
+}
+
+.headline {
+  position: relative;
+  width: max-content;
+  left: 15px;
+  top: 60px;
+  transform: rotate(-20deg);
+  font-family: "Permanent marker";
+  font-size: 48px;
+  opacity: 0.7;
+}
+
+.container {
+  display: grid;
+  justify-items: center;
+  gap: 2vw;
+  padding: 130px 10%;
+}
+
+@media (min-width: 600px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 700px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
