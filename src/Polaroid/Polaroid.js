@@ -15,27 +15,28 @@ export default function Polaroid({ data }) {
   return (
     <div className="hoverContainer">
       <div
-        onClick={handlePolaroidClick}
         className={styles.container}
         style={{ transform: `rotateZ(${getRandomArbitrary(-20, 20)}deg)` }}
       >
-        <img className={styles.photo} src={`/assets/${data.img}`} alt="" />
-        <img
-          className={styles.polaroidFrame}
-          src={data.subtype === "light" ? PolaroidLightImg : PolaroidDarkImg}
-          alt=""
-        />
-        <img
-          className={styles.pin}
-          src={KlammerImg}
-          style={{ transform: `rotateZ(${getRandomArbitrary(-20, 20)}deg)` }}
-          alt=""
-        />
-        <div
-          style={{ color: data.subtype === "dark" && "white" }}
-          className={styles.text}
-        >
-          {data.title}
+        <div style={{ position: "relative" }} onClick={handlePolaroidClick}>
+          <img className={styles.photo} src={`/assets/${data.img}`} alt="" />
+          <img
+            className={styles.polaroidFrame}
+            src={data.subtype === "light" ? PolaroidLightImg : PolaroidDarkImg}
+            alt=""
+          />
+          <img
+            className={styles.pin}
+            src={KlammerImg}
+            style={{ transform: `rotateZ(${getRandomArbitrary(-20, 20)}deg)` }}
+            alt=""
+          />
+          <div
+            style={{ color: data.subtype === "dark" && "white" }}
+            className={styles.text}
+          >
+            {data.title}
+          </div>
         </div>
       </div>
     </div>
