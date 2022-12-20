@@ -21,13 +21,13 @@ export default function Polaroid({ data }) {
     document.title = `Likes: ${likes}`;
   }, [likes]);
 
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      console.log("set rotation:" + data.id);
-      setRandomRotation(getRandomArbitrary(-20, 20));
-    }, 5000);
-    return () => clearTimeout(timeout);
-  });
+  // useEffect(() => {
+  //   const timeout = setTimeout(() => {
+  //     console.log("set rotation:" + data.id);
+  //     setRandomRotation(getRandomArbitrary(-20, 20));
+  //   }, 5000);
+  //   return () => clearTimeout(timeout);
+  // });
 
   const handlePolaroidClick = () => {
     setShowInfo(true);

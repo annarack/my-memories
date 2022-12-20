@@ -31,3 +31,27 @@ code {
   z-index: 2;
   transform: scale(1.2);
 }
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  transition: opacity 3s linear;
+}
+
+.fade-exit-active {
+  transition: opacity 3s linear;
+}

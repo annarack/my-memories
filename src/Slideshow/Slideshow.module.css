@@ -1,0 +1,15 @@
+.container {
+  position: fixed;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container img {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

@@ -1,0 +1,17 @@
+.container {
+  border: 1px solid rgba(235, 235, 235, 0);
+  border-radius: 10px;
+  background-color: rgb(235, 235, 235, 0);
+  padding: 10px 10px;
+  width: 70%;
+}
+
+.container:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.container.selected {
+  border: 1px solid rgba(235, 235, 235, 1);
+  background-color: rgba(235, 235, 235, 1);
+  font-weight: 600;
+}
